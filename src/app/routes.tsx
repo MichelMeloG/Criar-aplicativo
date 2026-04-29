@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet, useNavigate, useLocation } from "react-router";
+import { createHashRouter, Outlet, useNavigate, useLocation } from "react-router";
 import { OnboardingScreen } from "./components/OnboardingScreen";
 import { LoginScreen } from "./components/LoginScreen";
 import { HomeScreen } from "./components/HomeScreen";
@@ -111,7 +111,7 @@ function Root() {
   );
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: Root,
